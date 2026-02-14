@@ -13,6 +13,8 @@
   - data/명절선물_트렌드_수집일자_20260214.csv
   - `collect_gift_trends.py`, `visualize_gift_trends.py`
   - 분석 보고서들: `eda_report.md`, `eda_report_v2.md`, `Comprehensive_Holiday_Gift_Analysis_Report.md`
+  
+  - Used files for this section (data & EDA): `data/명절선물_트렌드_수집일자_20260214.csv`, `eda_report.md`, `eda_report_v2.md`, `holiday_eda_report.txt`, `keyword_count.png`, `click_dist.png`, `ctr_boxplot.png`, `pairplot.png`, `monthly_clicks_bar.png`
 
 ## 2. 핵심 시계열 및 시각화
 아래 이미지는 워크스페이스 내 시각화 파일을 사용합니다.
@@ -29,6 +31,8 @@
 
   ![관심도 히트맵](./시각화_3_히트맵.png)
 
+- Used files for this section (time series & aggregate visuals): `시각화_1_선그래프.png`, `1_trend_line.png`, `trend_time_series.png`, `시각화_2_막대그래프.png`, `2_total_clicks_bar.png`, `시각화_3_히트맵.png`, `8_clicks_area.png`, `viz_1.png`, `viz_3.png`
+
 ## 3. 기술적 분석 요약
 - 트렌드 지수와 클릭 간 강한 양의 상관관계(R ≈ 0.8 이상 관찰).
 - 이동평균(MA) 및 볼린저 밴드 분석으로 모멘텀과 과열 구간 파악(한우의 1월 중순 골든크로스, 상단 밴드 돌파 관찰).
@@ -38,6 +42,8 @@
 ![트렌드 vs 클릭](./3_trend_vs_clicks_scatter.png)
 ![이동평균](./11_moving_average.png)
 ![볼린저 밴드](./12_bollinger_bands.png)
+
+- Used files for this section (technical / momentum analysis): `3_trend_vs_clicks_scatter.png`, `11_moving_average.png`, `12_bollinger_bands.png`, `13_momentum_change.png`, `9_corr_heatmap.png`, `correlation_heatmap.png`
 
 ## 4. 연령대·성별 인사이트 (연도 비교)
 
@@ -53,6 +59,8 @@
 
 ![스팸세트 비교](./comparison_스팸세트.png)
 
+- Used files for this subsection (스팸 분석): `comparison_스팸세트.png`, `age_trend_bar.png`, `gender_trend_bar.png`
+
 ### 한우세트 (2024 vs 2025)
 | age | 2024 Share(%) | 2025 Share(%) | 증감(ppt) |
 |:---:|:---:|:---:|:---:|
@@ -65,6 +73,8 @@
 
 ![한우세트 비교](./comparison_한우세트.png)
 
+- Used files for this subsection (한우 분석): `comparison_한우세트.png`, `1_trend_line.png`, `monthly_clicks_bar.png`
+
 ### 홍삼세트 (2024 vs 2025)
 | age | 2024 Share(%) | 2025 Share(%) | 증감(ppt) |
 |:---:|:---:|:---:|:---:|
@@ -76,6 +86,8 @@
 | 60 | 11.23 | 11.19 | -0.04 |
 
 ![홍삼세트 비교](./comparison_홍삼세트.png)
+
+- Used files for this subsection (홍삼 분석): `comparison_홍삼세트.png`, `age_trend_bar.png`, `viz_7.png`
 
 ## 5. 주요 인사이트 및 권장 전략
 - 타이밍: 명절 D-14부터 캠페인 가동, D-10 전후에 집중 예산 배분.
