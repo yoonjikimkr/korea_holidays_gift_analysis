@@ -114,3 +114,40 @@ The following files from the `2024-2025-명절-선물-�
 - `2024-2025-명절-선물-트렌드-분서ᆥ-(스팸_한우_홍삼)/components/Slide.tsx`
 
 These files include the analysis app, frontend components, metadata and the original report HTML used to generate or present the visualizations embedded in this comprehensive report.
+
+### Implementation excerpts (key code mappings)
+Below are short excerpts showing how `app.py` (Python Streamlit) and `App.tsx` (React/Vite) map data to the charts used in this report.
+
+- `app.py` (data → Plotly charts)
+
+```python
+# example: timing line chart data and plot
+timing_df = pd.DataFrame({ 'date': ['D-30','D-20','D-14','D-7'], '한우':[15,25,40,85], '스팸':[5,10,20,50] })
+fig = px.line(timing_df, x='date', y=['한우','스팸','홍삼'], markers=True, color_discrete_map=COLOR_MAP)
+st.plotly_chart(fig, use_container_width=True)
+```
+
+This snippet produces the timing trend chart rendered as `시각화_1_선그래프.png` / `trend_time_series.png` in the report.
+
+- `App.tsx` (frontend → Recharts slides)
+
+```tsx
+// example: Rank horizontal bar (Recharts)
+<BarChart data={CONST.categoryRankData} layout="vertical"> 
+  <XAxis type="number" />
+  <YAxis dataKey="name" type="category" />
+  <Bar dataKey="value" />
+</BarChart>
+```
+
+And for timing (slide):
+
+```tsx
+<LineChart data={CONST.itemTimingData}>
+  <XAxis dataKey="date" />
+  <Line dataKey="hanwoo" stroke="#f472b6" />
+  <Line dataKey="spam" stroke="#f43f5e" />
+</LineChart>
+```
+
+These excerpts are representative of the data→visual mapping used across the folder. If you want, I can expand each excerpt into a short annotated block showing exact variable names and where the generated PNG filenames originate in the Python scripts.
