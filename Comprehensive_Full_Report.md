@@ -181,3 +181,12 @@ And for timing (slide):
 ```
 
 These excerpts are representative of the data→visual mapping used across the folder. If you want, I can expand each excerpt into a short annotated block showing exact variable names and where the generated PNG filenames originate in the Python scripts.
+
+## 포함된 모든 시각화 파일 목록
+다음은 분석 폴더 및 워크스페이스에서 보고서에 포함된 모든 시각화 이미지 파일입니다. 리포트의 각 섹션과 위에서 매핑된 파일들이며, 필요하면 각 이미지의 원본 코드 라인(생성 지점)을 추가로 추적해주겠습니다.
+
+- `시각화_1_선그래프.png`, `1_trend_line.png`, `trend_time_series.png`
+- `시각화_2_막대그래프.png`, `2_total_clicks_bar.png`
+- `시각화_3_히트맵.png`, `8_clicks_area.png`, `viz_1.png`, `viz_2.png`, `viz_3.png`, `viz_4.png`, `viz_5.png`, `viz_6.png`, `viz_7.png`, `viz_8.png`, `viz_9.png`, `viz_10.png`
+- `3_trend_vs_clicks_scatter.png`, `impressions_clicks_scatter.png`, `click_dist.png`, `keyword_count.png`, `monthly_clicks_bar.png`, `pairplot.png`, `correlation_heatmap.png`, `9_corr_heatmap.png`, `age_trend_bar.png`, `gender_trend_bar.png`, `ctr_boxplot.png`, `4_ctr_boxplot.png`, `6_impressions_pie.png`, `10_holiday_comparison.png`, `11_moving_average.png`, `12_bollinger_bands.png`, `13_momentum_change.png`, `comparison_스팸세트.png`, `comparison_한우세트.png`, `comparison_홍삼세트.png`, `명절선물_트렌드_분석.png`
+
